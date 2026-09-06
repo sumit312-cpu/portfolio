@@ -52,10 +52,10 @@ Vercel (Deployment)
 
 📂 Project Structure
 portfolio/
-│── public/
+├── public/
 │   └── resume.pdf
 │
-│── src/
+├── src/
 │   ├── assets/
 │   │   └── profile.jpeg
 │   │
@@ -76,9 +76,11 @@ portfolio/
 │   ├── main.jsx
 │   └── index.css
 │
-│── index.html
-│── package.json
-│── tailwind.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── README.md
 
 📊 Featured Projects:
 
