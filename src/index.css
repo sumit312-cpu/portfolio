@@ -1,0 +1,226 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+ 
+/* ========================= */ 
+/* ✅ GLOBAL RESET */ 
+/* ========================= */ 
+ 
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+ 
+html, 
+body, 
+#root { 
+  width: 100%; 
+  overflow-x: hidden; 
+  scroll-behavior: smooth; 
+} 
+ 
+/* ========================= */ 
+/* 🎨 DESIGN TOKENS */ 
+/* ========================= */ 
+ 
+:root { 
+  --bg: #050507; 
+  --text: #e9e9ee; 
+  --muted: #9ca3af; 
+  --accent: #7c3aed; 
+  --accent-light: #a78bfa; 
+} 
+ 
+/* ========================= */ 
+/* 🌍 GLOBAL */ 
+/* ========================= */ 
+ 
+body { 
+  background: var(--bg); 
+  color: var(--text); 
+  font-family: "Inter", sans-serif; 
+  line-height: 1.6; 
+ 
+  /* 🔥 CUSTOM CURSOR */ 
+  cursor: none; 
+} 
+ 
+/* Disable default cursor everywhere */ 
+a, 
+button, 
+input, 
+textarea { 
+  cursor: none; 
+} 
+ 
+/* Selection */ 
+::selection { 
+  background: var(--accent); 
+  color: #fff; 
+} 
+ 
+/* ========================= */ 
+/* 🔲 GRID BACKGROUND */ 
+/* ========================= */ 
+ 
+.animated-grid { 
+  position: absolute; 
+  inset: 0; 
+ 
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); 
+ 
+  background-size: 40px 40px; 
+  animation: gridMove 20s linear infinite; 
+} 
+ 
+@keyframes gridMove { 
+  0% { 
+    transform: translate(0, 0); 
+  } 
+  100% { 
+    transform: translate(-40px, -40px); 
+  } 
+} 
+ 
+/* ========================= */ 
+/* 🟣 MOUSE GLOW */ 
+/* ========================= */ 
+ 
+.mouse-glow { 
+  position: fixed; 
+  width: 300px; 
+  height: 300px; 
+  background: radial-gradient( 
+    circle, 
+    rgba(124, 58, 237, 0.08), 
+    transparent 60% 
+  ); 
+  pointer-events: none; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+} 
+ 
+/* ========================= */ 
+/* 🖱 CUSTOM CURSOR */ 
+/* ========================= */ 
+ 
+.cursor-ring, 
+.cursor-dot { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  pointer-events: none; 
+  z-index: 9999; 
+  will-change: transform; 
+} 
+ 
+/* Outer ring */ 
+.cursor-ring { 
+  width: 40px; 
+  height: 40px; 
+  border: 1px solid rgba(124, 58, 237, 0.8); 
+  border-radius: 50%; 
+  backdrop-filter: blur(2px); 
+} 
+ 
+/* Inner dot */ 
+.cursor-dot { 
+  width: 6px; 
+  height: 6px; 
+  background: #7c3aed; 
+  border-radius: 50%; 
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.9); 
+} 
+ 
+/* ========================= */ 
+/* ✨ CARD + HOVER */ 
+/* ========================= */ 
+ 
+.card-hover { 
+  transition: all 0.3s ease; 
+} 
+ 
+.card-hover:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); 
+} 
+ 
+/* ========================= */ 
+/* ✨ NAV UNDERLINE */ 
+/* ========================= */ 
+ 
+.nav-link { 
+  position: relative; 
+} 
+ 
+.nav-link::after { 
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  bottom: -4px; 
+  width: 0%; 
+  height: 2px; 
+  background: var(--accent); 
+  transition: 0.3s; 
+} 
+ 
+.nav-link:hover::after { 
+  width: 100%; 
+} 
+ 
+/* ========================= */ 
+/* 🔁 TOOLKIT AUTO SCROLL */ 
+/* ========================= */ 
+ 
+@keyframes scrollX { 
+  0% { 
+    transform: translateX(0); 
+  } 
+  100% { 
+    transform: translateX(-50%); 
+  } 
+} 
+ 
+.animate-scroll { 
+  display: flex; 
+  width: max-content; 
+  animation: scrollX 25s linear infinite; 
+} 
+ 
+.animate-scroll:hover { 
+  animation-play-state: paused; 
+} 
+ 
+/* ========================= */ 
+/* 📱 MOBILE FIX */ 
+/* ========================= */ 
+ 
+@media (max-width: 768px) { 
+  body { 
+    cursor: auto; 
+  } 
+ 
+  .cursor-ring, 
+  .cursor-dot { 
+    display: none; 
+  } 
+} 
+ 
+/* ========================= */ 
+/* 🧠 REDUCE MOTION */ 
+/* ========================= */ 
+ 
+@media (prefers-reduced-motion: reduce) { 
+  * { 
+    animation: none !important; 
+    transition: none !important; 
+  } 
+}
+
+.cursor-ring,
+.cursor-dot {
+  pointer-events: none;
+}
