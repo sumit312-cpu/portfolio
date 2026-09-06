@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://sumit-tiwari-portfolioweb.vercel.app/">
-    <img src="https://raw.githubusercontent.com/sumit312-cpu/YOUR_REPO_NAME/main/portfolio-preview.png" width="100%" />
+    <img src="https://raw.githubusercontent.com/sumit312-cpu/portfolio/main/portfolio-preview.png" width="100%" />
   </a>
 </p>
 
@@ -115,7 +115,7 @@ portfolio/
 💻 GitHub: https://github.com/sumit312-cpu
 🧠 LeetCode: https://leetcode.com/u/Sumitti/
 
-/
+
 🚀 Run Locally
 git clone https://github.com/sumit312-cpu/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
