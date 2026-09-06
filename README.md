@@ -1,56 +1,70 @@
-🚀 Sumit Tiwari — AI & Data Science Portfolio
+# 🚀 Sumit Tiwari — AI & Data Science Portfolio
 
-Data Scientist | ML Engineer | AI Enthusiast
+**Data Scientist | ML Engineer | AI Enthusiast**
 
-🌐 Live Demo:
+---
 
+## 🌐 Live Demo  
 🔗 https://sumit-tiwari-portfolioweb.vercel.app/
+
+---
 
 ## 🖼 Portfolio Preview
 
 <p align="center">
-  <img src="./assets/portfolio-preview.png" alt="Portfolio Preview" width="100%" />
+  <a href="https://sumit-tiwari-portfolioweb.vercel.app/">
+    <img src="https://raw.githubusercontent.com/sumit312-cpu/YOUR_REPO_NAME/main/portfolio-preview.png" width="100%" />
+  </a>
 </p>
 
-🧠 About This Project:
+---
 
-A modern, responsive developer portfolio built using React + Tailwind CSS, showcasing my work in:
+## 🧠 About This Project
 
-Data Science
-Machine Learning
-AI Systems
-Analytics & Dashboards
+A modern, responsive developer portfolio built using **React + Tailwind CSS**, showcasing:
 
-Designed with custom UI (grid background, glowing cursor, smooth animations) to stand out to recruiters.
+- Data Science  
+- Machine Learning  
+- AI Systems  
+- Analytics & Dashboards  
 
-⚡ Key Features:
+Designed with **custom UI (grid background, glowing cursor, smooth animations)** to stand out to recruiters.
 
-🎯 Clean & modern UI/UX
-🖱 Custom animated cursor + mouse glow
-📊 Project-focused layout (recruiter-friendly)
-📱 Fully responsive design
-⚡ Fast performance (Vite + React)
-🔗 Clickable contact integrations (Email, LinkedIn, GitHub)
+---
 
-🛠 Tech Stack:
-👨‍💻 Frontend
-React.js
-Tailwind CSS
-Framer Motion
+## ⚡ Key Features
 
-🧠 Data & AI:
+- 🎯 Clean & modern UI/UX  
+- 🖱 Custom animated cursor + mouse glow  
+- 📊 Project-focused layout (recruiter-friendly)  
+- 📱 Fully responsive design  
+- ⚡ Fast performance (Vite + React)  
+- 🔗 Clickable contact integrations  
 
-Python
-Scikit-learn
-Pandas, NumPy
-NLP
+---
 
-⚙️ Tools :
-Git & GitHub
-Vercel (Deployment)
+## 🛠 Tech Stack
 
+### 👨‍💻 Frontend
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
 
-📂 Project Structure
+### 🧠 Data & AI
+- Python  
+- Scikit-learn  
+- Pandas, NumPy  
+- NLP  
+
+### ⚙️ Tools
+- Git & GitHub  
+- Vercel (Deployment)  
+
+---
+
+## 📂 Project Structure
+
+```bash
 portfolio/
 ├── public/
 │   └── resume.pdf
@@ -78,11 +92,15 @@ portfolio/
 │
 ├── index.html
 ├── package.json
+<<<<<<< HEAD
+=======
+├── portfolio-preview.png
+>>>>>>> f4c00f4 (Updated README)
 ├── postcss.config.js
 ├── tailwind.config.js
 └── README.md
 
-📊 Featured Projects:
+📊 Featured Projects
 
 🤖 AI Resume Screening Agent
 📉 Customer Churn Prediction
@@ -90,28 +108,29 @@ portfolio/
 📊 E-Commerce Sales Dashboard (Power BI)
 📈 Trader Behaviour Analysis
 
-📬 Contact:
+📬 Contact
 
 📧 Email: sumittiwari62642004@gmail.com
 🔗 LinkedIn: https://linkedin.com/in/sumit-tiwari-7a7112381/
 💻 GitHub: https://github.com/sumit312-cpu
 🧠 LeetCode: https://leetcode.com/u/Sumitti/
 
+/
 🚀 Run Locally
-git clone https://github.com/sumit312-cpu/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/sumit312-cpu/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
 npm install
 npm run dev
 
-💡 Future Improvements :
+💡 Future Improvements
 🔹 Add blog section
 🔹 Integrate AI chatbot
 🔹 Deploy ML models live
 🔹 Add dark/light theme toggle
-
-⭐ Show Your Support:
+⭐ Show Your Support
 
 If you like this project:
+
 👉 Star ⭐ the repo
 👉 Connect on LinkedIn
 
