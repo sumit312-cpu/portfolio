@@ -29,7 +29,7 @@ const projects = [
       "Built a regression model to estimate car prices using multiple features with feature engineering and optimization techniques.",
     impact: "🚗 Improved prediction accuracy by ~15%",
     tools: ["Python", "Pandas", "Scikit-learn"],
-    link: null,
+    link: "https://github.com/sumit312-cpu", // ✅ fallback
   },
   {
     id: "004",
@@ -38,7 +38,7 @@ const projects = [
       "Designed an NLP-based text classification system using vectorization and supervised learning techniques.",
     impact: "📧 High precision spam detection",
     tools: ["Python", "NLP", "Scikit-learn"],
-    link: null,
+    link: "https://github.com/sumit312-cpu", // ✅ fallback
   },
   {
     id: "005",
@@ -83,7 +83,7 @@ const projects = [
       "Developed a regression model to estimate insurance costs based on demographics and lifestyle data.",
     impact: "💰 Improved pricing prediction accuracy",
     tools: ["Python", "Pandas", "Scikit-learn"],
-    link: null,
+    link: "https://github.com/sumit312-cpu", // ✅ fallback
   },
   {
     id: "010",
@@ -92,7 +92,7 @@ const projects = [
       "Built an automated trading bot using APIs and rule-based strategies for real-time execution.",
     impact: "🤖 Automated trading operations",
     tools: ["Python", "APIs", "Automation"],
-    link: null,
+    link: "https://github.com/sumit312-cpu", // ✅ fallback
   },
 ];
 
@@ -100,7 +100,6 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 border-b border-white/5">
 
-      {/* HEADING */}
       <p className="mb-4 font-mono text-sm text-purple-400">
         // 02 — PROJECTS
       </p>
@@ -111,9 +110,12 @@ export default function Projects() {
 
       {/* FEATURED */}
       {projects.filter(p => p.featured).map(project => (
-        <div
+        <a
           key={project.id}
-          className="mb-12 border border-purple-500/30 p-8 rounded-xl bg-white/5 backdrop-blur-md max-w-3xl card-hover"
+          href={project.link}
+          target="_blank"
+          rel="noreferrer"
+          className="block mb-12 border border-purple-500/30 p-8 rounded-xl bg-white/5 backdrop-blur-md max-w-3xl card-hover"
         >
           <p className="text-purple-400 text-sm mb-4">{project.id}</p>
 
@@ -140,21 +142,20 @@ export default function Projects() {
             ))}
           </div>
 
-          {project.link && (
-            <div className="flex justify-end mt-6">
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <ExternalLink className="text-purple-400 hover:text-white transition" size={20} />
-              </a>
-            </div>
-          )}
-        </div>
+          <div className="flex justify-end mt-6">
+            <ExternalLink className="text-purple-400" size={20} />
+          </div>
+        </a>
       ))}
 
       {/* GRID */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.filter(p => !p.featured).map(project => (
-          <div
+          <a
             key={project.id}
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
             className="border border-white/10 p-6 rounded-lg bg-white/5 hover:border-purple-500 transition card-hover h-full flex flex-col justify-between"
           >
             <div>
@@ -186,14 +187,10 @@ export default function Projects() {
               </div>
             </div>
 
-            {project.link && (
-              <div className="flex justify-end mt-4">
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  <ExternalLink className="text-purple-400 hover:text-white transition" size={18} />
-                </a>
-              </div>
-            )}
-          </div>
+            <div className="flex justify-end mt-4">
+              <ExternalLink className="text-purple-400" size={18} />
+            </div>
+          </a>
         ))}
       </div>
 
