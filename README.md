@@ -98,10 +98,8 @@ portfolio/
 │
 ├── index.html
 ├── package.json
-<<<<<<< HEAD
-=======
 ├── portfolio-preview.png
->>>>>>> f4c00f4 (Updated README)
+├──Updated README
 ├── postcss.config.js
 ├── tailwind.config.js
 └── README.md
