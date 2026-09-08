@@ -46,7 +46,7 @@ export default function About() {
           </div>
 
           <a
-            href="/resume.pdf"
+            href="/RESUME_SUMIT.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-10 border border-white/10 px-5 py-3 rounded-md text-sm hover:border-purple-500 hover:text-purple-400 transition"
